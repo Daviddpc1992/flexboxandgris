@@ -3,6 +3,87 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(61, 75, 75);
+    font-family: fantasy;
+}
+
+div.centrado {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    max-width: 1026px;
+    text-align: center;
+}
+
+header nav ul {
+    
+    padding: 5%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ main section {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+
+}
+main section article{
+    width: 20%;
+    background-color: rgba(0, 0, 255, 0.109);
+    border: 1px solid black;
+    padding: 10%;
+    margin:10px 0px 10px 0px;
+    
+}
+@media(max-width:640px)
+{
+    body{
+        background-color: chocolate;
+    }
+    main section article{
+        width: calc(50% - 2px);
+        margin: 1px;
+        background-color: darkgoldenrod;
+      
+        
+    }
+}
+
+@media(max-width:425px)
+{
+    body{
+        background-color: rgb(44, 214, 177);
+    }
+    header nav ul {
+    
+       
+        display: block;
+    
+
+    }
+    header nav ul li{
+        height: 5vh;
+        line-height: 5vh;
+       
+    }
+    main section article{
+        width: calc(100% - 2px);
+        margin: 1px;
+        background-color: darkgoldenrod;
+    
+    }
 }
